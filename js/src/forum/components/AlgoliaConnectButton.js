@@ -26,7 +26,9 @@ export default class AlgoliaConnectButton {
 
                 items.add('connect',
                     Button.component({
-                        children: app.translator.trans(isIndexed ? 'Unindex' : 'Index'),
+                        children: app.translator.trans(
+                            `flarum-algolia-search.forum.connect-btn.${isIndexed ? 'unindex_label' : 'index_label'}`
+                        ),
                         className: 'Button Button--link',
                         onclick: () => {
                             isIndexed = !isIndexed;

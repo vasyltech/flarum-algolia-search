@@ -1,0 +1,11 @@
+flarum-algolia-search:
+  admin:
+    algolia_settings:
+      application_id_label: "Application ID"
+      search_api_key_label: "Search-Only API Key"
+      api_key_label: "Admin API Key"
+      index_label: "Search Index"
+  forum:
+    connect-btn:
+      unindex_label: "Unindex"
+      index_label: "Index"

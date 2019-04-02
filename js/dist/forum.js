@@ -7578,7 +7578,7 @@ function AlgoliaConnectButton() {
     if (!post.isHidden() && post.canIndex()) {
       var isIndexed = post.isIndexed();
       items.add('connect', flarum_components_Button__WEBPACK_IMPORTED_MODULE_2___default.a.component({
-        children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(isIndexed ? 'Unindex' : 'Index'),
+        children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans("flarum-algolia-search.forum.connect-btn." + (isIndexed ? 'unindex_label' : 'index_label')),
         className: 'Button Button--link',
         onclick: function onclick() {
           isIndexed = !isIndexed;

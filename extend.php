@@ -23,7 +23,9 @@ return [
     // Register backend
     (new Extend\Frontend('admin'))
         ->js(__DIR__ . '/js/dist/admin.js'),
-
+    // Register transactions
+    new Extend\Locales(__DIR__ . '/locale'),
+    // Hook into the core processes
     function (Dispatcher $events) {
         $events->subscribe(ExtendApiAttributesListener::class);
         $events->subscribe(PostIndexListener::class);

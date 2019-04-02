@@ -21,22 +21,22 @@ export default class AlgoliaSearchSettingsModal extends SettingsModal {
   form() {
     return [
       <div className="Form-group">
-        <label>Application ID</label>
+        <label>{app.translator.trans('flarum-algolia-search.admin.algolia_settings.application_id_label')}</label>
         <input className="FormControl" bidi={this.setting('algolia-search.application_id')} />
       </div>,
 
       <div className="Form-group">
-        <label>Search-Only API Key</label>
+        <label>{app.translator.trans('flarum-algolia-search.admin.algolia_settings.search_api_key_label')}</label>
         <input className="FormControl" bidi={this.setting('algolia-search.search_api_key')} />
       </div>,
 
       <div className="Form-group">
-        <label>Admin API Key</label>
+        <label>{app.translator.trans('flarum-algolia-search.admin.algolia_settings.api_key_label')}</label>
         <input className="FormControl" bidi={this.setting('algolia-search.api_key')} />
       </div>,
 
       <div className="Form-group">
-        <label>Search Index</label>
+        <label>{app.translator.trans('flarum-algolia-search.admin.algolia_settings.index_label')}</label>
         <input className="FormControl" bidi={this.setting('algolia-search.index')} />
       </div>
     ];

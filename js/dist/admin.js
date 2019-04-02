@@ -174,22 +174,22 @@ function (_SettingsModal) {
   _proto.form = function form() {
     return [m("div", {
       className: "Form-group"
-    }, m("label", null, "Application ID"), m("input", {
+    }, m("label", null, app.translator.trans('flarum-algolia-search.admin.algolia_settings.application_id_label')), m("input", {
       className: "FormControl",
       bidi: this.setting('algolia-search.application_id')
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, "Search-Only API Key"), m("input", {
+    }, m("label", null, app.translator.trans('flarum-algolia-search.admin.algolia_settings.search_api_key_label')), m("input", {
       className: "FormControl",
       bidi: this.setting('algolia-search.search_api_key')
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, "Admin API Key"), m("input", {
+    }, m("label", null, app.translator.trans('flarum-algolia-search.admin.algolia_settings.api_key_label')), m("input", {
       className: "FormControl",
       bidi: this.setting('algolia-search.api_key')
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, "Search Index"), m("input", {
+    }, m("label", null, app.translator.trans('flarum-algolia-search.admin.algolia_settings.index_label')), m("input", {
       className: "FormControl",
       bidi: this.setting('algolia-search.index')
     }))];

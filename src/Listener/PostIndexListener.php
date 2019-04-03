@@ -57,14 +57,17 @@ class PostIndexListener implements SettingsAwareInterface
         $attributes = $event->data['attributes'];
         $post = $event->post;
 
-        // Step #1. Let's make sure that current user is allowed to index a post
-        $this->assertCan($event->actor, 'index', $post);
+        // Is it indexing step
+        if (isset($attributes['isIndexed'])) {
+            // Step #1. Let's make sure that current user is allowed to index a post
+            $this->assertCan($event->actor, 'index', $post);
 
-        // Step #2. Determine correct action based on provided flag
-        if (!empty($attributes['isIndexed'])) {
-            $this->indexPost($post);
-        } else {
-            $this->unindexPost($post);
+            // Step #2. Determine correct action based on provided flag
+            if (!empty($attributes['isIndexed'])) {
+                $this->indexPost($post);
+            } else {
+                $this->unindexPost($post);
+            }
         }
     }
 

@@ -1,6 +1,6 @@
 {
-  "private": true,
   "name": "@vasyltech/flarum-algolia-search",
+  "version": "1.0.0-alpha.1",
   "dependencies": {
     "algoliasearch": "^3.32.1",
     "flarum-webpack-config": "0.1.0-beta.10",

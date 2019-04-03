@@ -1,6 +1,9 @@
 {
     "name": "vasyltech/flarum-algolia-search",
     "description": "Replace the default Flarum search with Algolia search",
+    "keywords": ["flarum", "algolia", "search"],
+    "homepage": "https://vasyltech.com/",
+    "license": "MIT",
     "type": "flarum-extension",
     "require": {
         "flarum/core": "0.1.0-beta.8.1",
@@ -10,9 +13,6 @@
         "psr-4": {"VasylTech\\AlgoliaSearch\\": "src/"}
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        },
         "flarum-extension": {
             "title": "Algolia Search",
             "icon": {
